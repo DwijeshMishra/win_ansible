@@ -1,0 +1,6 @@
+---
+- name: use to exectue ansible on windows
+  hosts: win
+  gather_facts: false
+  roles:
+   - stackdriver_win

@@ -1,0 +1,13 @@
+---
+# vars file for winstackdrivers
+
+fluentd_download_url: https://storage.googleapis.com/stackbucket/StackdriverLogging-v1-14.exe
+
+monitoring_download_url: https://storage.googleapis.com/stackbucket/StackdriverMonitoring-GCM-46.exe
+
+#file name include .exe example: "fluentd-v1-14.exe"
+
+fluentd_file_name: StackdriverLogging-v1-14.exe
+monitoring_file_name: StackdriverMonitoring-GCM-46.exe
+
+download_dest: C:\

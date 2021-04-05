@@ -1,0 +1,14 @@
+ansible_user: dwijeshm3
+
+ansible_password: kH<y8rrHc:A=Y&+
+
+ansible_connection: winrm
+
+ansible_winrm_server_cert_validation: ignore
+
+ansible_winrm_transport: basic
+
+ansible_winrm_port: 5985
+
+ansible_python_interpreter: C:\Users\dwijeshm3\AppData\Local\Programs\Python\Python37\python
+

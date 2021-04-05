@@ -1,0 +1,15 @@
+---
+# tasks file for winstackdrivers
+- name: Download {{ fluentd_file_name }} & {{ monitoring_file_name }}
+  win_get_url:
+    url:  "{{ item }}"
+    dest: "{{ download_dest }}"
+  with_items:
+    - "{{ fluentd_download_url }}"
+    - "{{ monitoring_download_url }}"
+
+- name: Installing Logging Agent & Monitoring Agent
+  win_shell: "{{ item }}"
+  with_items:
+    - "{{ download_dest }}/{{ fluentd_file_name }} /S"
+    - "{{ download_dest }}/{{ monitoring_file_name }} /S"
